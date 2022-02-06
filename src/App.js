@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import HomePage from "./pages/home";
+import "./css/main.scss"
+import {Route, Swith, useHistory} from "react-router-dom";
+import {useState, useEffect} from "react"
+import Navigation from "./components/navigation";
+import Footer from "./components/footer";
+import AboutPage from "./pages/about";
+import WorkPage from "./pages/work";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class Home extends Component {
+    state = {  } 
+    render() { 
+        return (
+            <HomePage/>
+        );
+    }
 }
+ 
+export default Home;
 
-export default App;
